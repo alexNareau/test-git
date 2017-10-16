@@ -13,13 +13,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        afficher("yé", fois: 5)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func afficher(_ msg:String, fois:Int){
+        for i in 0...fois {
+            print(i, msg)
+        }
+        
+    }
+    
 
 }
 
